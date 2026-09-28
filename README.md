@@ -28,22 +28,33 @@ Multiple test scenarios have been implemented using **Python** and **Pytest** to
 
 ## 🚀 Usage
 Run all test scenarios using:
-```bash
-pytest -v
+```bash pytest -v
 
+## 🧪 Test Scenarios
 | No. | Scenario Name | Description |
-| --- | --- | --- |
-| 1️⃣ | **Column Validation** | Ensures column names in source and target files match exactly. |
-| 2️⃣ | **Data Type Validation** | Confirms each column’s data type is consistent between source and target. |
-| 3️⃣ | **Positive Amount Validation** | Checks that all transaction amounts are positive and valid. |
+|-----|----------------|-------------|
+| 1️⃣ | Column Validation | Ensures column names in source and target files match exactly. |
+| 2️⃣ | Data Type Validation | Confirms each column’s data type is consistent between source and target. |
+| 3️⃣ | Positive Amount Validation | Checks that all transaction amounts are positive and valid. |
 
+---
+
+## 🧠 Technologies Used
 | Technology | Purpose |
-| --- | --- |
-| **Python** | Core programming language for ETL validation logic |
-| **Pandas** | Used for reading and manipulating CSV data |
-| **Pytest** | Framework for writing and executing automated test cases |
+|-------------|----------|
+| Python | Core programming language for ETL validation logic |
+| Pandas | Used for reading and manipulating CSV data |
+| Pytest | Framework for writing and executing automated test cases |
 
+---
+
+## 🔍 Assert Keyword Explanation
+The `assert` keyword is used to **verify test conditions**.  
+If the condition evaluates to `True`, the test passes; if `False`, Pytest raises an **AssertionError**.  
+Example:
+```python
 assert expected_columns == actual_columns, "Column mismatch between source and target"
+
 
 Sushmita  
 Data Quality Engineer  
